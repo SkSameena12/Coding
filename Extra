@@ -1,0 +1,82 @@
+Coding Hands-on
+
+Question 2
+
+P
+
+You are given an array a[1,N) and an integer K partition the array into exactly K non-empty contiguous groups
+
+The score of a group is the count of its most frequent element (its mode frequency)
+
+Find the maximum total mode-frequency score across all K groups
+
+11
+
+Input Format
+
+Arahimchot
+
+The first line contains a integer, n denoting the size of the array.
+
+Case 1
+
+Case 2
+
+Case 3
+
+The second line contains a integer, k denoting the number of contiguous groups
+
+Each line i of the n subsequent lines (where 0.5 in) contains a integerCase 3
+
+Input:
+
+1
+
+2
+
+abdulrahimchotu7771
+
+Output:
+
+Explanation:
+
+Explanation: Here, K1, meaning w are not allowed to make any cuts. The entire array must remain as a single contiguous group, Group 1: [1, 2, 1, 2. 1]. The most frequent element is 1, which appears 3 times.
+sys
+
+input sys stdin.readline
+
+def solve(n: int, k: int, a list) int
+
+#Write your solution here
+
+return
+
+if name
+
+9
+
+try:
+
+10
+
+"main":
+
+int(input())
+
+int(input())
+
+22
+
+list(map(int, input().split()))
+
+13
+
+result solve(n, k, a)
+
+14
+
+print(result)
+
+Test case
+
+Custom
