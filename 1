@@ -1,0 +1,219 @@
+In satellite signal processing, a stream of N data packets is received. Each packet i is classified into a category A[i] (ranging from 0 to C-1) and carries a specific signal weight W[i] representing its data density.
+
+A monitoring window [I, r] (the contiguous range of packets from index I to r) is considered frequency-balariced if there is at least one category that appears in strictly more than half of the packets in that window. In other words, some category is a strict majority in the window.
+
+Find the maximum total weight (the sum of W[i] for all packets in the window) over all possible frequency-balanced windows.
+
+8
+
+Input Format
+
+neenast 20
+
+The first line contains a integer, N, denoting the total number of data packets.
+
+The second line contains a integer, C. denoting the total number of possible categories.
+
+Each line i of the N subsequent lines (where 0 <= i < N rangle contains a integer, A[i].
+
+Each line i of the N subsequent lines (where 0 <= i < N ) contains a integer, W[i].
+
+sam
+
+Constraints
+
+1 <= N <= 10 ^ 5
+
+1 <= C <= 10 ^ 5
+
+enaske
+
+- 10 ^ 9 <= A[i] <= 10 ^ 9
+
+- 10 ^ 9 <= W[i] <= 10 ^ 9
+
+enask
+Sample Test Cases
+
+Case 1
+
+Input:
+
+3
+
+3
+
+2
+
+10
+
+10
+
+10
+
+sameenask200317
+
+sameenask200317
+
+Output:
+
+30
+
+ameenask200317..
+
+Explanation:
+
+sameenask200317
+
+Selecting the entire window of three packets allows category 1 to appear twice to form a strict majority, yielding a total accumulated weight of 30.
+
+Case 2
+
+Input:
+
+3
+
+1
+
+2
+
+3
+
+100
+
+100
+
+100
+
+sameena sk200317
+
+sameenask200317
+
+Output
+
+100
+
+ameenask200317
+
+Explanation:
+
+sameenask200317
+
+With completely unique categories of 1, 2, and 3, no category can achieve a strict majority in any window larger than a single packet, making the optimal choice any individual
+Coding Hands-on
+
+Question 1
+
+Explanation:
+
+With completely unique categories of 1, 2, and 3, no category can achieve a strict majority in any window larger than a single packet, making the optimal choice any individual packet with its maximum weight of of 100.
+
+Case 3
+
+Input:
+
+16
+
+5
+
+2
+
+4
+
+0
+
+1
+
+10
+
+10
+
+10
+
+10
+
+10
+
+10
+
+10
+
+10
+
+10
+
+10.
+
+sameenas
+
+sameenas 200
+
+sameenask200317..
+
+sameenask200317
+
+sameenask200317
+
+sameenask200317
+
+Output
+
+10
+
+Explanation:
+
+Because matching categories are spaced widely apart, no category appears frequently enough to exceed half the length of any multiple packet window, restricting the selection to a single packet and capping the maximum weight at 10.
+
+Python 1
+
+import sys
+
+input sys.stdin.readline
+
+AAC৫
+
+Result
+
+1 12345678910
+
+201
+
+11
+
+12
+
+14
+
+15
+
+16
+
+17
+
+Case 1
+
+Input
+
+def solve(N: int, C: int, A: list, w: list) -> int:
+
+#Write your solution here
+
+return o
+
+if name="main":
+
+try:
+
+Nint(input())
+
+Cint(input())
+
+Alist(map(int, input().split())) wlist(map(int, input().split()))
+
+result solve(N, C, A, W)
+
+print(result)
+
+except (EOFError, ValueError):
+
+pass
