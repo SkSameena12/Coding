@@ -1,0 +1,201 @@
+Coding Hands-on
+
+Question 3
+
+You are positioned at station 1 on a linear path consisting of N stations. Each station i (from 1 to N) has an associated score s[i], which can be positive, negative, or zero. You begin your journey with F units of fuel.
+
+Movement and Fuel
+
+penask24
+
+You start at station 1 and automatically collect the score s[1].
+
+From your current station i, you may jump forward to any station j such that i < j and jis less than or equal to the minimum of N and (i + MAX).
+
+The fuel cost for a jump from i to j is exactly j-i units of fuel.
+
+You can only perform a jump if your remaining fuel is greater than of that jump neenas equal to the cost
+
+200311
+
+You may choose to end your journey at any station you land on, or you must stop if no further valid jumps are possible due to fuel or distance constraints.
+
+Scoring You collect the score s[i] for every station i that you land on during your journey.
+
+Find the maximum total sum of scores collected.
+
+Note:
+
+200311
+
+e Since fuel cost is equal to the distance traveled, the total fuel consumed to reach station i from station 1 is exactly (i-1), regardless of the intermediate jumps.
+
+Input Format
+
+The first line contains a integer, N, denoting the number of stations
+
+The second line contains a integer, F, denoting the initial fuel units
+
+eenas
+
+The third line contains a integer, MAX, denoting the maximum jump distance
+
+Fach line i of the Nicuhconvient linec (whorancie i intains a intanar
+The third line contains a integer, MAX, denoting the maximum jump distance Each line i of the N subsequent lines (where 0 ≤ i < N) contains a integer, sfi
+
+Constraintsameena
+
+1<= N <= 10^5
+
+0<= F <= 5000
+
+sk200
+
+1 MAX < N
+
+-10^9 <= s[i]<= 10^9
+
+sameenask24.
+
+sa. <k2005
+
+Sample Test Cases
+
+Case 1
+
+Input:
+
+sameer sk200317
+Input:
+
+18 53232345
+
+sameenask200317
+
+sameenask200317
+
+Output:
+
+19
+
+Explanation:
+
+Starting at the first stat of distance 1 to the second, third, and fourth stations perfectly consumes the entire fuel supply of 3 while gathering the intermediate scores of 2, 3, and 4, accumulating a maximum station collects the initial score of 18. Making three consecutive Jumps total score of 19.
+
+200317
+
+Case 2
+
+Input
+
+1
+
+10
+
+1
+
+100
+
+sameenask200317
+
+sameenask200317
+
+Output
+
+100
+
+Explanation:
+
+Beginning at the single-available station immediately secures the score of 180. Since further stations exist to jump to, the available fuel and maximum jump limits are completely irrelevant, ending the journey right there with a total score of exactly 100.
+Case 3
+
+Input
+
+1
+
+10
+
+20
+
+30
+
+sameenask800317
+
+Output
+
+10
+
+Explanation:
+
+sk200317
+
+Starting at the first station collects the base score of 10. Because the initial fuel supply is strictly 8, no forward jumps can be made to the subsequent higher scoring stations, forcing the journey to halt immediately with a maximun total score of 10.
+3
+
+1
+
+import sys
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+if
+
+sys.stdin.readline input
+
+def solve(N: int, F: int, MAX: int, s: list) -> int:
+
+# Write your solution here
+
+return 0
+
+name
+
+9
+
+main":
+
+try:
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+N= int(input())
+
+Fint(input())
+
+MAX= int(input())
+
+s = list(map(int, input().split()))
+
+result = solve (N, F, MAX, s)
+
+print(result)
+
+except (EOFError, ValueError):
+
+pass
